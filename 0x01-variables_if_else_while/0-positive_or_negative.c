@@ -8,7 +8,7 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int main(void) // prints random number and states if pos, neg, zero
 {
 int n;
 
