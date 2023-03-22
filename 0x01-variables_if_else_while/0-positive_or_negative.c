@@ -2,20 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 /*
- *
- * main - Entry point
+ * main - Prints a random number and states whether
+ *        it is positive, negative, or zero.
  *
  * Return: Always 0 (Success)
- *
- *
- *
  */
 
-/* 
-if the number is greater than 0: is positive
-if the number is 0: is zero
-if the number is less than 0: is negative
-*/
 int main(void)
 {
 int n;
