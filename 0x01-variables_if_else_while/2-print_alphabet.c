@@ -1,11 +1,11 @@
 #include <stdio.h>
 /*
- * main - prints alphabet using putchar
+ * main -> prints lowercase  alphabet using putchar
  *
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
 	int i = 97;
 		while (i <= 122)
@@ -13,6 +13,6 @@ int main()
 			putchar(i);
 			i++;
 		}
-	return 0;
+	putchar(10);
+	return (0);
 }
-
