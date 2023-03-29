@@ -28,4 +28,3 @@ x++;
 putchar(ne);
 return (0);
 }
-
