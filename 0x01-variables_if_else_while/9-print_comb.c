@@ -16,7 +16,6 @@ while (i <= 57)
 putchar(i);
 if (i < 57)
 putchar(comma);
-if (i < 57)
 putchar(space);
 
 i++;
