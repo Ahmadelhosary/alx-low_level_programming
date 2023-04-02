@@ -3,6 +3,8 @@
 /**
  * _islower - print 1 if lower case, print 0 if not
  *
+ *@c: The character to be checked.
+ *
  * Return: Return 1 or 0.
  */
 
