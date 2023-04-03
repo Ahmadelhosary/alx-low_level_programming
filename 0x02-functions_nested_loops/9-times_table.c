@@ -1,38 +1,25 @@
-#include "main.h"
-
-/**
- * times_table - Prints table 9.
- *
- * Return: void.
- */
-
 void times_table(void)
 {
-int h;
-int m;
+	int n, m, p;
 
-for (h = 0; h < 10; h++)
-{
-for (m = 0; m < 10; m++)
-{
-int x = h * m;
-if (x < 10)
-{
-printf("%d", x);
-}
-else if (x > 9)
-{
-printf("%d", x);
-}
+	for (n = 0; n <= 9; n++)
+	{
+		_putchar('0');
 
-if (m < 9) /* check if we are at the end of the row */
-{
-if (x < 10)
-printf(",  ");
-if (x > 9)
-printf(", ");
-}
-}
-putchar('\n');
-}
+		for (m = 1; m <= 9; m++)
+		{
+			_putchar(',');
+			_putchar(' ');
+
+			p = n * m;
+
+			if (p <= 9)
+				_putchar(' ');
+			else
+				_putchar((p / 10) + '0');
+
+			_putchar((p % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
