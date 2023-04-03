@@ -18,7 +18,7 @@ for (m = 0; m < 10; m++)
 int x = h * m;
 if (x < 10)
 {
-printf("%d ", x);
+printf("%d", x);
 }
 else if (x > 9)
 {
