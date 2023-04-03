@@ -7,7 +7,7 @@
  * Return: The same n if more or equal to zero,
  *         -1 * n if the number is less than zero.
  */
-int int_abs(int n)
+int int _abs(int n)
 {
 	if (n >= 0)
 	{
