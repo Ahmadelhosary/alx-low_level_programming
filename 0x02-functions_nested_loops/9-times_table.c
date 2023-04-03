@@ -27,9 +27,9 @@ printf("%d", x);
 
 if (m < 9) /* check if we are at the end of the row */
 {
-if (x < 10)    
+if (x < 10)
 printf(",  ");
-if (x > 9)    
+if (x > 9)
 printf(", ");
 }
 }
