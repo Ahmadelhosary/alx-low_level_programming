@@ -7,36 +7,36 @@
  */
 void print_times_table(int n)
 {
-	int nu, mu, pr;
+	int numb, mul, pro;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (nu = 0; nu <= n; nu++)
+		for (numb = 0; numb <= n; numb++)
 		{
 			_putchar('0');
 
-			for (mu = 1; mu <= n; mu++)
+			for (mul = 1; mul <= n; mul++)
 			{
 				_putchar(',');
 				_putchar(' ');
 
-				pr = nu * mu;
+				pro = numb * mul;
 
-				if (pr <= 99)
+				if (pro <= 99)
 					_putchar(' ');
-				if (pr <= 9)
+				if (pro <= 9)
 					_putchar(' ');
 
-				if (pr >= 100)
+				if (pro >= 100)
 				{
-					_putchar((pr / 100) + '0');
-					_putchar(((pr / 10)) % 10 + '0');
+					_putchar((pro / 100) + '0');
+					_putchar(((pro / 10)) % 10 + '0');
 				}
-				else if (pr <= 99 && pr >= 10)
+				else if (pro <= 99 && pro >= 10)
 				{
-					_putchar((pr / 10) + '0');
+					_putchar((pro / 10) + '0');
 				}
-				_putchar((pr % 10) + '0');
+				_putchar((pro % 10) + '0');
 			}
 			_putchar('\n');
 		}
