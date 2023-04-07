@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - Update value of input to 98.
  *
- *@*n: input pointer.
+ *@n: input pointer.
  *
  * Return: void.
  */
