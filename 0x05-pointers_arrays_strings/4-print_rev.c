@@ -15,10 +15,10 @@ int len;
 int i;
 
 len = strlen(s);
+ i = len - 1;
 
 while (s[i] != '\0')
 {
-i = len - 1;
 _putchar(s[i]);
 i--;
 }
