@@ -13,8 +13,8 @@ int i = 0;
 
 while (*s != '\0')
 {
-i++;
 *s++;
+i++;
 }
 return i;
 }
