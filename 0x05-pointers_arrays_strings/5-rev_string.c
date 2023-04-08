@@ -12,8 +12,9 @@
  */
 
 
-void rev_string(char *s){
-        
+void rev_string(char *s)
+{
+
 int i;
 int len;
 int x;
@@ -26,9 +27,6 @@ i++;
 }
 putchar('\n');
 
-
-
-
 len = strlen(s);
 x = len - 1;
 
@@ -38,4 +36,5 @@ putchar(s[x]);
 x--;
 }
 putchar('\n');
+
 }
