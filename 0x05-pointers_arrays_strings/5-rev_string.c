@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 
 /**
  * rev_string - reverses a string
@@ -22,19 +23,18 @@ int x;
 i = 0;
 while (s[i] != '\0')
 {
-putchar(s[i]);
+_putchar(s[i]);
 i++;
 }
-putchar('\n');
+_putchar('\n');
 
 len = strlen(s);
 x = len - 1;
 
 while (s[x] != '\0')
 {
-putchar(s[x]);
+_putchar(s[x]);
 x--;
 }
-putchar('\n');
-
+_putchar('\n');
 }
