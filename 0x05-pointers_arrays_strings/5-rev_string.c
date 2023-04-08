@@ -12,37 +12,28 @@
  */
 
 
-void rev_string(char *s)
-{        
-void _puts(char *s)
-{
+void rev_string(char *s){
+        
 int i = 0;
+  
 while (s[i] != '\0')
 {
-_putchar(s[i]);
+putchar(s[i]);
 i++;
 }
-_putchar('\n');
-}
+putchar('\n');
 
 
-
-void print_rev(char *s)
-{
 int len;
-int i;
+int x;
 
 len = strlen(s);
-i = len - 1;
+x = len - 1;
 
-while (s[i] != '\0')
+while (s[x] != '\0')
 {
-_putchar(s[i]);
-i--;
+putchar(s[x]);
+x--;
 }
-_putchar('\n');
-
-}
-_puts(s);
-print_rev(s);
+putchar('\n');
 }
