@@ -10,8 +10,9 @@
 
 void _puts(char *str)
 {
-for (*str; *str != '\0'; *str++)
+while (*str && *str != '\0')
 {
 _putchar(*str);
+*str++;
 }
 }
