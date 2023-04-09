@@ -19,5 +19,9 @@ for (o = leng / 2; o <= leng; o++)
 {
 _putchar(str[o]);
 }
+ if (leng % 2 == 1)
+{
+_putchar((leng - 1) / 2);
+}
 _putchar('\n');
 }
