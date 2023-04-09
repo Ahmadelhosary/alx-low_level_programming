@@ -1,0 +1,23 @@
+#include "main.h"
+#include <string.h>
+
+/**
+ * puts_half - prints half of a string
+ * @str: char to check
+ *
+ * Return: 0 is success
+ */
+
+void puts_half(char *str)
+{
+int leng;
+int o;
+
+leng = strlen(str);
+
+for (o = leng/2; o <= leng; o++)
+{
+_putchar(str[o]);
+}
+_putchar('\n');
+}
