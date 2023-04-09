@@ -15,7 +15,7 @@ int o;
 
 leng = strlen(str);
 
-for (o = leng / 2; str[o] != '\0'; o++)
+for (o = leng / 2; str[o] != '\0' && o < leng; o++)
 {
 _putchar(str[o]);
 }
