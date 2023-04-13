@@ -36,5 +36,5 @@ con[x] = s1[x];
 for (y = 0; y < len2; y++, x++)
 con[x] = s2[y];
 con[(len1 + len2)] = '\0';
-return(con);
+return (con);
 }
