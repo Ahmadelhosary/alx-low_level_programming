@@ -18,7 +18,7 @@ if (width == 0 || width < 0)
 return (NULL);
 if (height == 0 || height < 0)
 return (NULL);
-g = [height][width] = {0};
+**g = [height][width] = {0};
 g = (int **)malloc(sizeof(int) * (height));
 
 for (i = 0; i <= width; i++)
