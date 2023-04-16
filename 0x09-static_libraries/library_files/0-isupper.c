@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
  * _isupper - function block
@@ -10,9 +9,10 @@
 
 int _isupper(int c)
 {
-int a = 0;
 
-if (c >= 65 && c <= 90)
-a = 1;
-return (a);
+	if (c >= 65 && c <= 90)
+		return (1);
+
+	else
+		return (0);
 }
