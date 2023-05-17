@@ -29,6 +29,10 @@ char *ss = dest;
 		src++;
 	}
 	if (sizeof(src) < n)
+	{
+		*dest = '\0';
+	}
+
 	*dest = '\0';
 	return (ss);
 
