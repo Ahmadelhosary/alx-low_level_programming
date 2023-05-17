@@ -22,18 +22,17 @@ char *ss = dest;
 		dest++;
 	}
 
-	while (sizeof(src) == n)
+	while (sizeof(dest) == n)
 	{
 		*dest = *src;
 		dest++;
 		src++;
 	}
-	if (sizeof(src) < n)
+	if (sizeof(dest) < n)
 	{
 		*dest = '\0';
 	}
 
-	*dest = '\0';
 	return (ss);
 
 }
