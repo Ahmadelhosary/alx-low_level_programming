@@ -22,16 +22,14 @@ char *ss = dest;
 		dest++;
 	}
 
-	while (sizeof(dest) == n)
+	while (*src != '\0' && n > 0)
 	{
 		*dest = *src;
 		dest++;
 		src++;
 	}
-	if (sizeof(dest) < n)
-	{
+
 		*dest = '\0';
-	}
 
 	return (ss);
 
