@@ -3,7 +3,7 @@
 /**
  * string_toupper - changes all lowercase letters of a string
  * to uppercase
- * @s: string to modify
+ * @c: string to modify
  *
  * Return: the uppercase string
  */
@@ -14,10 +14,10 @@ int i;
 
 i = 0;
 
-for (i = 0; i < sizeof(c)/sizeof(char); i++)
+for (i = 0; i < c[i] != '\0'; i++)
 {
-if (c[i] >= 97  && c[i] <= 122)
+if (c[i] >= 97 && c[i] <= 122)
 c[i] -= 32;
 }
-return c;
+return (c);
 }
