@@ -16,6 +16,11 @@ int main(int argc, char *argv[])
 	int s;
 	(void)argc;
 
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	f = atoi(argv[1]);
 	s = atoi(argv[2]);
 	mu = f * s;
