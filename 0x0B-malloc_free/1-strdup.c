@@ -11,7 +11,7 @@
 char *_strdup(char *str)
 {
 char *strt;
-unsigned int i, j;
+int i, j;
 int len;
 
 if (str == NULL)
@@ -32,4 +32,6 @@ while (i < len)
 strt[i] = str[j];
 i++;
 j++;
+}
+return (strt);
 }
