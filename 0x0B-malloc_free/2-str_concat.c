@@ -28,7 +28,7 @@ l1++;
 while (s2[l2] != '\0')
 l2++;
 
-co = (char *)malloc(((l1 + l2)+2) * sizeof(char));
+co = (char *)malloc(((l1 + l2)+1) * sizeof(char));
 
 if (co == NULL)
 return (NULL);
