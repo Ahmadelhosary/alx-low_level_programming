@@ -33,5 +33,6 @@ strt[i] = str[j];
 i++;
 j++;
 }
+strt[i] = '\0';
 return (strt);
 }
