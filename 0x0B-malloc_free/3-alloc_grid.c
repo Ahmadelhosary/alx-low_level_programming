@@ -31,6 +31,7 @@ arr[i][j] = 0;
 if (arr == NULL)
 	return (NULL);
 
+free (arr);
 return (arr);
 
 }
