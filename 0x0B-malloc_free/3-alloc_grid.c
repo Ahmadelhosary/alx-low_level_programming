@@ -30,11 +30,13 @@ arr[i][j] = 0;
 }
 if (arr == NULL)
 	return (NULL);
+	
 for (i = 0; i < height; i++)
 {
 	free (arr[i]);
 }
 free (arr);
+
 return (arr);
 
 }
