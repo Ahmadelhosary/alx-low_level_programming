@@ -48,7 +48,7 @@ j++;
 }
 z = l1;
 v = 0;
-while (z < (l1 + n))
+while (z < (l1 + l2))
 {
 co[z] = s2[v];
 z++;
