@@ -16,7 +16,7 @@ char *co;
 unsigned int i, j, v, z, l1, l2;
 
 i = 0, j = 0, v = 0, l1 = 0, l2 = 0;
-z = l1;
+
 if (s1 == NULL)
 	s1 = "";
 if (s2 == NULL)
@@ -36,6 +36,7 @@ while (i < l1)
 {
 co[i++] = s1[j++];
 }
+z = l1;
 while (n < l2 && z < (l1 + n))
 {
 co[z++] = s2[v++];
