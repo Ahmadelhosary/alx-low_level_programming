@@ -27,9 +27,9 @@ l1++;
 while (s2[l2] != '\0')
 l2++;
 if (n < l2)
-co = (char *)malloc(((l1 + n) +1) * sizeof(char));
+co = (char *)malloc((l1 + n + 1) * sizeof(char));
 else
-co = (char *)malloc(((l1 + l2) +1) * sizeof(char));
+co = (char *)malloc((l1 + l2 + 1) * sizeof(char));
 if (co == NULL)
 return (NULL);
 while (i < l1)
