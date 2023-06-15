@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- *@b - size of allocation
- *
- *Return: pointer to allocated space or 98 if failed
+ * @b - size of allocation
+ * @*malloc_checked - takes size and return a pointer to allocated memory
+ * Return: pointer to allocated space or 98 if failed
  */
 
 void *malloc_checked(unsigned int b)
