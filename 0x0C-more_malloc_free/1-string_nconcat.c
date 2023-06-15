@@ -16,7 +16,7 @@ char *co;
 unsigned int i, j, v, z, l1, l2;
 
 i = 0, j = 0, v = 0, l1 = 0, l2 = 0;
-z = l1
+z = l1;
 if (s1 == NULL)
 	s1 = "";
 if (s2 == NULL)
