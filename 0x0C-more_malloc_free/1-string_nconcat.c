@@ -30,10 +30,10 @@ l1++;
 while (s2[l2] != '\0')
 l2++;
 
-if (n >= l2)
-co = (char *)malloc(((l1 + l2)+1) * sizeof(char));
-else
+if (n < l2)
 co = (char *)malloc(((l1 + n)+1) * sizeof(char));
+else
+co = (char *)malloc(((l1 + l2)+1) * sizeof(char));
 
 if (co == NULL)
 return (NULL);
@@ -46,14 +46,23 @@ co[i] = s1[j];
 i++;
 j++;
 }
+
 z = l1;
 v = 0;
-while (z < (l1 + l2))
+while (n < l2 && z < (l1 + n))
 {
 co[z] = s2[v];
 z++;
 v++;
 }
+
+while (n >= l2 && z < (l1 + l2))
+{
+co[z] = s2[v];
+z++;
+v++;
+}
+
 co[z] = '\0';
 return (co);
 }
