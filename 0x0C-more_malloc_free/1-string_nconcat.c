@@ -15,6 +15,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 char *co;
 unsigned int i, j, v, z, l1, l2;
 
+i = 0; j = 0; z = l1; v = 0;
 if (s1 == NULL)
 	s1 = "";
 if (s2 == NULL)
@@ -30,14 +31,12 @@ else
 co = (char *)malloc(((l1 + l2) +1) * sizeof(char));
 if (co == NULL)
 return (NULL);
-i = 0; j = 0;
 while (i < l1)
 {
 co[i] = s1[j];
 i++;
 j++;
 }
-z = l1; v = 0;
 while (n < l2 && z < (l1 + n))
 {
 co[z] = s2[v];
