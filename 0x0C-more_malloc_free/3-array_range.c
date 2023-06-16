@@ -30,7 +30,7 @@ return (NULL);
 
 for (i = 0; i < size; i++)
 {
-ari[i] = min + i;
+ari[i] = min++;
 }
 
 return (ari);
