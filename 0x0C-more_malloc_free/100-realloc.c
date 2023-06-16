@@ -35,7 +35,7 @@ if (new_size > old_size)
 if (ptr == NULL)
 {
 arr = malloc(new_size * sizeof(char));
-return (0);
+return void;
 }
 else
 arr = malloc(new_size * sizeof(char));
