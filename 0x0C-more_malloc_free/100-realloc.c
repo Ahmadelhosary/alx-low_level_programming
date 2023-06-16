@@ -30,7 +30,10 @@ if (new_size == 0 && ptr != NULL)
 }
 
 if (new_size > old_size)
-
+	{
+		for (i = 0; i < old_size; i++)
+			ptr1[i] = old_ptr[i];
+	}
 
 if (!ptr)
 return (malloc(new_size));
