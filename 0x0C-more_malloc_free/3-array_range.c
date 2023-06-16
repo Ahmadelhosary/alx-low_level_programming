@@ -22,7 +22,7 @@ size = max - min + 1;
 if (min > max)
 return (NULL);
 
-ari = (int *)malloc(size * sizeof(int));
+ari = (int *)malloc(size *sizeof(int));
 if (ari == NULL)
 return (NULL);
 
