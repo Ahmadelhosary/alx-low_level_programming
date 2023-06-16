@@ -22,7 +22,17 @@ unsigned int i;
 
 if (new_size == old_size)
 return (ptr);
-arr = malloc(new_size * sizeof(int));
+
+if (new_size == 0 && ptr != NULL)
+{
+	free(ptr);
+	return (NULL);
+}
+
+if (ptr == NULL)
+arr = malloc(new_size * sizeof(char));
+else
+arr = malloc(new_size * sizeof(char));
 
 for (i = 0; i < (new_size + 1) ; i++)
 {
