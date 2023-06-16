@@ -14,7 +14,7 @@ int *array_range(int min, int max)
 {
 
 int *ari;
-int r, i, size;
+int i, size;
 
 i = 0;
 size = max - min + 1;
@@ -30,7 +30,7 @@ return (NULL);
 
 while (i < size)
 {
-arr[i] = min + i;
+ari[i] = min + i;
 i++;
 }
 
