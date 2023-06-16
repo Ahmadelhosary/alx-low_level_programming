@@ -29,8 +29,14 @@ if (new_size == 0 && ptr != NULL)
 	return (NULL);
 }
 
+if (new_size > old_size)
+
+
 if (ptr == NULL)
+{
 arr = malloc(new_size * sizeof(char));
+return (0);
+}
 else
 arr = malloc(new_size * sizeof(char));
 
