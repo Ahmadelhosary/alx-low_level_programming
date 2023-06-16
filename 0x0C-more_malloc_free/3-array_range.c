@@ -28,10 +28,9 @@ return (NULL);
 
 
 
-while (i < size)
+for (i = 0; i < size; i++)
 {
 ari[i] = min + i;
-i++;
 }
 
 return (ari);
