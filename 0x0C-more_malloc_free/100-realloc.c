@@ -32,14 +32,13 @@ if (new_size == 0 && ptr != NULL)
 if (new_size > old_size)
 
 
-if (ptr == NULL)
-
-arr = malloc(new_size * sizeof(char));
+if (!ptr)
+return (malloc(new_size));
 
 else
 arr = malloc(new_size * sizeof(char));
 
-for (i = 0; i < (new_size + 1) ; i++)
+for (i = 0; i < new_size ; i++)
 {
 *(arr + i) = *(pr + i);
 }
