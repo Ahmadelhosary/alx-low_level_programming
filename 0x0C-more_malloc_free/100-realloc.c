@@ -29,16 +29,18 @@ if (new_size == 0 && ptr != NULL)
 	return (NULL);
 }
 
-if (new_size > old_size)
-	{
-		for (i = 0; i < old_size; i++)
-			arr[i] = pr[i];
-	}
+
 
 if (!ptr)
 return (malloc(new_size));
 else
 arr = malloc(new_size * sizeof(char));
+
+if (new_size > old_size)
+	{
+		for (i = 0; i < old_size; i++)
+			arr[i] = pr[i];
+	}
 
 for (i = 0; i < new_size ; i++)
 {
