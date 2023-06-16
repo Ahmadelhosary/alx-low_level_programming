@@ -14,19 +14,19 @@ int *array_range(int min, int max)
 {
 
 int *ari;
-int r, i;
+int r, i, size;
 
+size = max - min + 1;
 if (min > max)
 return (NULL);
-r = max - min;
 
-ari = (int *)malloc((r + 1) * sizeof(int));
+ari = (int *)malloc(size * sizeof(int));
 if (ari == NULL)
 return (NULL);
 
 i = 0;
 
-while (i <= (r + 1))
+while (i < size)
 {
 ari[i] = min;
 i++;
