@@ -32,7 +32,7 @@ if (new_size == 0 && ptr != NULL)
 if (new_size > old_size)
 	{
 		for (i = 0; i < old_size; i++)
-			arr[i] = old_ptr[i];
+			arr[i] = pr[i];
 	}
 
 if (!ptr)
