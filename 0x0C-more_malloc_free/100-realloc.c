@@ -48,6 +48,7 @@ for (i = 0; i < new_size ; i++)
 }
 *(arr + i) = '\0';
 
+free(arr);
 return (arr);
 
 }
