@@ -3,14 +3,11 @@
 #include "dog.h"
 
 /**
- * print_dog - prints a struct dog
+ * print_dog - prints a struct dog with its elements
  * @d: struct dog to print
  */
-
-
 void print_dog(struct dog *d)
 {
-
 	if (d == NULL)
 		return;
 
