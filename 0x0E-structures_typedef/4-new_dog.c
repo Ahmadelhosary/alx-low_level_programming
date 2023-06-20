@@ -21,29 +21,29 @@ return (NULL);
 
 l1 = 0, l2 = 0;
 while (name[l1] != '\0')
-l1++;
+	l1++;
 while (owner[l2] != '\0')
-l2++;
+	l2++;
 
 ndog->name = (char *)malloc((l1 + 1) * sizeof(char));
-if (ndog->name == NULL)
-{
-free(ndog);
-return (NULL);
-}
+	if (ndog->name == NULL)
+	{
+	free(ndog);
+	return (NULL);
+	}
 ndog->owner = (char *)malloc((l2 + 1) * sizeof(char));
-if (ndog->owner == NULL)
-{
-free(ndog);
-free(ndog->name);
-return (NULL);
-}
+	if (ndog->owner == NULL)
+	{
+	free(ndog);
+	free(ndog->name);
+	return (NULL);
+	}
 for (i = 0; i < l1; i++)
-ndog->name[i] = name[i];
+	ndog->name[i] = name[i];
 ndog->name[i] = '\0';
 
 for (j = 0; j < l2; j++)
-ndog->owner[j] = owner[j];
+	ndog->owner[j] = owner[j];
 ndog->owner[j] = '\0';
 
 ndog->age = age;
