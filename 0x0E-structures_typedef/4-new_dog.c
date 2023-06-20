@@ -21,8 +21,11 @@ ndog = (dog_t *)malloc(sizeof(dog_t));
 if (ndog == NULL)
 return (NULL);
 
+l1 = 0;
 while (name[l1] != '\0')
 l1++;
+
+l2 = 0;
 while (owner[l2] != '\0')
 l2++;
 
