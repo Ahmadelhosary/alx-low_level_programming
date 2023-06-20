@@ -27,8 +27,18 @@ while (owner[l2] != '\0')
 l2++;
 
 ndog->name = (char *)malloc((l1 + 1) * sizeof(char));
+  if (dog->name == NULL)
+	{
+		free(dog);
+		return (NULL);
+	}
 ndog->owner = (char *)malloc((l2 + 1) * sizeof(char));
-
+if (dog->owner == NULL)
+	{
+		free(dog);
+		free(dog->name);
+		return (NULL);
+	}
 for (i = 0; i < l1; i++)
 ndog->name[i] = name[i];
 ndog->name[i] = '\0';
