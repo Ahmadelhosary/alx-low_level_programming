@@ -24,9 +24,11 @@ return (-1);
 	
 for (i = 0; i < size; i++, j++)
 {
+if (j != 0)
+{
 cmp(array[i]);
 j = cmp(array[i]);
-if (j != 0)
+}
 return (i);
 }
 return (-1);
