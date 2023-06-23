@@ -22,8 +22,9 @@ if (i > 0 && separator != NULL)
 printf("%s ", separator);
 
 x = va_arg(args, int);
-printf("%d", x);
+printf("%d\n", x);
 }
 
 va_end(args);
+printf("\n");
 }
