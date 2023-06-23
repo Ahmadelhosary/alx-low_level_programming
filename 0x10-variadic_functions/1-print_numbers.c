@@ -19,7 +19,7 @@ va_start(args, n);
 for (i = 0; i < n; ++i)
 {
 if (i > 0 && separator != NULL)
-printf("%s ", separator);
+printf("%s", separator);
 
 x = va_arg(args, int);
 printf("%d", x);
