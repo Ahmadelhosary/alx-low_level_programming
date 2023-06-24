@@ -49,11 +49,11 @@ char *s = va_arg(args, char*);
 printf("%s", s);
 }
 /**
- * op_t - typedef for struct
+ * operator - struct to choose
  * @op: format specifier
  * @f: choose which function will be used
  */
-typedef struct
+typedef struct operator
 {
 const char *op;
 void (*f)(va_list);
