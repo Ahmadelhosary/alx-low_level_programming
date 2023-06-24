@@ -4,10 +4,10 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-/*
+
+/** 
  * print_c - Print a character from va_list
  * args: va_list containing the character to print
- *
  * This function retrieves a character argument from va_list and prints it.
  */
 void print_c(va_list args)
@@ -52,8 +52,8 @@ char *s = va_arg(args, char*);
 printf("%s", s);
 }
 
-
-typedef struct {
+typedef struct
+{
 const char *op;
 void (*f)(va_list);
 } op_t;
