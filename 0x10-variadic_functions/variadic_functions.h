@@ -53,11 +53,12 @@ printf("%s", s);
  * @op: format specifier
  * @f: choose which function will be used
  */
-typedef struct operator
+struct operator
 {
 const char *op;
 void (*f)(va_list);
-} op_t;
+};
+typedef struct operator op_t;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
