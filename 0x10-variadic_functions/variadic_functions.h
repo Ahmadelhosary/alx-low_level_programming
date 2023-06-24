@@ -49,9 +49,9 @@ char *s = va_arg(args, char*);
 printf("%s", s);
 }
 /**
- * operator - struct to choose
- * @op: format specifier
- * @f: choose which function will be used
+ * struct operator - a dog's basic info
+ * @op: First member
+ * @f: Second member
  *
  * Description: Longer description
  */
