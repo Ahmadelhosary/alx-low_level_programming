@@ -48,6 +48,11 @@ void print_s(va_list args)
 char *s = va_arg(args, char*);
 printf("%s", s);
 }
+/**
+ * op_p - Operator and Function Mapping
+ * - op: format specifier
+ * - f: choose which function will be used
+ */
 
 typedef struct
 {
