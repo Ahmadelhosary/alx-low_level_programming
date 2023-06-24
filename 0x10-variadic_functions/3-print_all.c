@@ -4,41 +4,45 @@
  * print_all - prints anything
  * @format: list of types of arguments passed to the function
  */
-
-void print_all(const char *format, ...)
+void print_all(const char * const format, ...)
 {
-int i, j;
-char *separator = ""; /*Separator string*/
-va_list args;
+	int i = 0;
+	char *str, *sep = "";
 
-op_t type[] = {
-{"c", print_c},
-{"i", print_i},
-{"f", print_f},
-{"s", print_s}
-};
+	va_list list;
 
-va_start(args, format);
+	va_start(list, format);
 
-i = 0;
-while (format != NULL && format[i] != '\0')
-{
-j = 0;
-while (j < 4)
-{
-if (format[i] == *(type[j].op))
-{
-printf("%s", separator);
-type[j].f(args);
-separator = ", ";
-break; /*Exit the inner loop after matching format specifier*/
+	if (format)
+	{
+		while (format[i])
+		{
+			switch (format[i])
+			{
+				case 'c':
+					printf("%s%c", sep, va_arg(list, int));
+					break;
+				case 'i':
+					printf("%s%d", sep, va_arg(list, int));
+					break;
+				case 'f':
+					printf("%s%f", sep, va_arg(list, double));
+					break;
+				case 's':
+					str = va_arg(list, char *);
+					if (!str)
+						str = "(nil)";
+					printf("%s%s", sep, str);
+					break;
+				default:
+					i++;
+					continue;
+			}
+			sep = ", ";
+			i++;
+		}
+	}
+
+	printf("\n");
+	va_end(list);
 }
-j++;
-}
-i++;
-}
-
-printf("\n");
-va_end(args);
-}
-
