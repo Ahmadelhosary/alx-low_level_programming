@@ -28,6 +28,11 @@ char *s = va_arg(args, char*);
 printf("%s", s);
 }
 
+typedef struct {
+const char *op;
+void (*f)(va_list);
+} op_t;
+
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
