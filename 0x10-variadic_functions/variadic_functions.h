@@ -53,7 +53,6 @@ printf("%s", s);
  * @op: format specifier
  * @f: choose which function will be used
  */
-
 typedef struct
 {
 const char *op;
