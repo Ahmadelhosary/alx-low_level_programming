@@ -52,6 +52,8 @@ printf("%s", s);
  * operator - struct to choose
  * @op: format specifier
  * @f: choose which function will be used
+ *
+ * Description: Longer description
  */
 struct operator
 {
