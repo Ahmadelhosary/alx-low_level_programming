@@ -5,7 +5,7 @@
 #include <stdarg.h>
 
 
-/** 
+/**
  * print_c - Print a character from va_list
  * args: va_list containing the character to print
  * This function retrieves a character argument from va_list and prints it.
@@ -16,7 +16,7 @@ int c = va_arg(args, int);
 printf("%c", c);
 }
 
-/*
+/**
  * print_i - Print an integer from va_list
  * args: va_list containing the integer to print
  *
@@ -28,7 +28,7 @@ int i = va_arg(args, int);
 printf("%d", i);
 }
 
-/*
+/**
  * print_f - Print a floating-point number from va_list
  * args: va_list containing the floating-point number to print
  *
@@ -40,7 +40,7 @@ double f = va_arg(args, double);
 printf("%f", f);
 }
 
-/*
+/**
  * print_s - Print a string from va_list
  * args: va_list containing the string to print
  *
