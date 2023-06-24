@@ -49,7 +49,7 @@ char *s = va_arg(args, char*);
 printf("%s", s);
 }
 /**
- * op_t - Operator and Function Mapping
+ * op_t - typedef for struct
  * @op: format specifier
  * @f: choose which function will be used
  */
