@@ -3,27 +3,26 @@
 #include <string.h>
 
 /**
- * *_calloc - allocate memory for array with known elements and size
+ * _calloc - allocate memory for array with known elements and size
  *
- * @nmemb: elements
- * @size: size of each elements
+ * @nmemb: number of elements
+ * @size: size of each element
  *
- * Return: void
+ * Return: void pointer to allocated memory
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	void *arr;
 
-void *arr;
+	if (nmemb == 0 || size == 0)
+		return NULL;
 
-if (nmemb == 0 || size == 0)
-return (NULL);
+	arr = malloc(nmemb * size);
+	if (arr == NULL)
+		return NULL;
 
-arr = malloc(nmemb * size);
-memset(arr, 0, size);
+	memset(arr, 0, nmemb * size);
 
-if (arr == NULL)
-return (NULL);
-
-return (arr);
+	return arr;
 }
