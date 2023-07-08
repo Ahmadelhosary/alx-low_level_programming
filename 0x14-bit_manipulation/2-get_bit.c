@@ -9,19 +9,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	/* Binary representation array */
-	int binary[32];
-	int i = 0;
+
+	unsigned long int m = 1 << index;
 
 	if (index >= (sizeof(unsigned long int) * 8))
 		return (-1);
 
-	while (n > 0)
-	{
-		binary[i] = n % 2;
-		n = n / 2;
-		i++;
-	}
-
-	return (binary[index]);
+	return ((n & m) ? 1 : 0);
 }
