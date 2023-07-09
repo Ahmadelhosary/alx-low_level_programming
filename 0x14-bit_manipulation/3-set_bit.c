@@ -14,8 +14,9 @@ int set_bit(unsigned long int *n, unsigned int index)
 		/* Error: Index is out of bounds */
 		return (-1);
 	}
+	unsigned long int mask;
 
-	unsigned long int mask = 1UL << index;
+	mask = 1UL << index;
 	*n |= mask;
 
 	return (1);
