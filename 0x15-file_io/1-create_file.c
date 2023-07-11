@@ -10,8 +10,8 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-    int fd;
-    ssize_t bytesWritten;
+	int fd;
+	ssize_t bytesWritten;
 
 	if (filename == NULL)
 		return (-1);
